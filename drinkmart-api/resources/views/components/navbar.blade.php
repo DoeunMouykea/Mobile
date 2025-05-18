@@ -7,7 +7,7 @@
         </div>
         <div>
           <a class="navbar-brand brand-logo" href="/">
-            <img src="logo.png" alt="logo" width="150" />
+            <img src="logo.png" alt="logo" width="180" />
           </a>
           <a class="navbar-brand brand-logo-mini" href="/">
             <img src="logo.png" alt="logo" />
@@ -409,20 +409,33 @@
                 </ul>
                 </div>
             </li>
-
-        <li class="nav-item nav-category">Help</li>
-        <li class="nav-item">
-            <a class="nav-link" href="/showcontact">
-            <i class="menu-icon mdi mdi-account-card-details"></i>
-              <span class="menu-title">Contact</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/document">
-              <i class="menu-icon mdi mdi-file-document"></i>
-              <span class="menu-title">Documentation</span>
-            </a>
-          </li>
+            <li class="nav-item nav-category">Pages</li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+                <i class="menu-icon mdi mdi-account-circle-outline"></i>
+                <span class="menu-title">About</span>
+                <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="charts">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="/about">Create about</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/showabout">Show about</a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+                <i class="menu-icon mdi mdi-table"></i>
+                <span class="menu-title">Blog</span>
+                <i class="menu-arrow"></i>
+                </a>
+                <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="/blog">Create Blog</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/showblog">Show Blog</a></li>
+                </ul>
+                </div>
+            </li>
 
         </ul>
       </nav>

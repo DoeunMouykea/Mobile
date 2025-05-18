@@ -5,7 +5,7 @@
 @section('content')
 <!-- Slideshow Table -->
 <div class="card">
-    <h5 class="card-header text-center">Table Slideshow</h5>
+    <h3 class="card-header text-center ">Table Slideshow</h3>
     <div class="table-responsive text-nowrap">
         <table class="table">
             <caption class="ms-4">List of slides</caption>
@@ -46,14 +46,14 @@
                     row.innerHTML = `
                         <td><img src="${slide.image}" width="100" alt="${slide.title}"></td>
                         <td>${slide.title}</td>
-                        <td>${slide.description.substring(0, 30)}...</td>
-                        <td><a href="${slide.link}" target="_blank">${slide.link}</a></td>
+                         <td>${slide.description ? slide.description.substring(0, 30) + '...' : 'No description'}</td>
+                         <td>${slide.link ? `<a href="${slide.link}" target="_blank">${slide.link}</a>` : 'No link'}</td>
                         <td>
                             <button class="btn btn-info btn-sm edit-slide"
                                     data-id="${slide.id}"
                                     data-title="${slide.title}"
-                                    data-description="${slide.description}"
-                                    data-link="${slide.link}"
+                                    data-description="${slide.description || ''}"
+                                    data-link="${slide.link || ''}"
                                     data-image="${slide.image}">
                                 Edit
                             </button>
